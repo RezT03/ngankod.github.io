@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/aio_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
+    <link rel="icon" href="../assets/logo_himti.ico">
+    <title>C++ For Loop</title>
+</head>
+
+<body>
+    <header class="toHome" id="home-header">
+        <a href="../index.html">
+            <img src="../assets/logo_himti.webp" alt="logo himti">
+        </a>
+        <span><a href="../index.html">HIMTI UNSIQ</a></span>
+    </header>
+    <div class="menus">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <aside>
+        <div class="materi">
+            <a href="../material/bahasa-program.html">Bahasa Pemrograman</a>
+            <a href="../material/cpp_intro.html">Pengenalan C++</a>
+            <a href="../material/cpp_syntax.html">Syntax C++</a>
+            <a href="../material/cpp_output.html">Output C++</a>
+            <a href="../material/cpp_data_types.html">Tipe Data</a>
+            <a href="../material/cpp_variabel.html">Variabel</a>
+            <a href="../material/cpp_input.html">Input Pengguna C++</a>
+            <a href="../material/cpp_operator.html">Operator</a>
+            <a href="../material/cpp_condition.html">Kondisi</a>
+            <a href="../material/cpp_switch.html">Switch Case</a>
+            <a href="../material/cpp_loop_for.html" id="for">Perulangan : for</a>
+            <a href="../material/cpp_loop_while.html">Perulangan : While</a>
+            <a href="../material/cpp_loop_do_while.html">Perulangan : do..While</a>
+        </div>
+    </aside>
+    <article class="main-content">
+        <h1>Perulangan <em>(Loop)</em></h1>
+        Perulangan (<em>loop</em>) adalah sebuah proses dimana blok kode akan terus dijalankan selama kondisinya terpenuhi (true). <br>
+        <hr>
+        <h1>Perulangan : for</h1>
+        for loop adalah metode perulangan yang mana dapat ditentukan berapa kali kode akan dijalankan. Gunakan perulangan ini ketika kalian sudah tahu jumlah proses perulangannya. <br> Syntax for loop :
+        <div class="code">
+            <code>
+                <span class="key">for</span>(statement1;statement2;statement3){<br>
+                &nbsp; <span class="comment">//blok kode</span>    
+                <br>}
+            </code>
+        </div>
+        <b>statement1</b> : dieksekusi satu kali sebelum menjalankan blok kode <br>
+        <b>statement2</b> : mendefinisikan kondisi untuk blok kode <br>
+        <b>statement3</b> :dijalankan setelah blok kode selesai dijalankan. <br> Contoh :
+        <div class="code">
+            <code>
+                <span class="key">for</span>(<span class="tipe">int</span> i=1; i&#60;=10; i++){<br>
+                    &nbsp;<span class="cout">cout</span> <span class="operator">&#60;&#60;</span> i <span class="operator">&#60;&#60;</span> ", ";
+                <br>}
+            </code>
+        </div>
+        Dari kode diatas akan menghasilkan output : <b>1, 2, 3, 4, 5, 6, 7, 8, 9, 10,</b>
+        <br> Penjelasan : <br>
+        <b>int i=1</b> nilai awal(sebelum loop berjalan) adalah 1 dengan tipe data integer <br>
+        <b>i&#60;=10</b> kondisi nilai i kurang dari sama dengan 10. Jika kondisi benar, maka loop akan terus berjalan. <br>
+        <b>i++</b> menaikkan nilai i sebanyak 1 setiap kali blok kode dijalankan. Akan berhenti ketika kondisi <em>false</em>.
+    </article>
+    <div class="btn">
+        <div class="prev">
+            <a href="../material/cpp_switch.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="next">
+            <a href="../material/cpp_loop_while.html">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="../script/script.js"></script>
+
+</html>

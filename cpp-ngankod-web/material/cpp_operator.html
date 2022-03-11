@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="in">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/aio_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
+    <link rel="icon" href="../assets/logo_himti.ico">
+    <title>C++ Operator</title>
+</head>
+
+<body>
+    <header class="toHome" id="home-header">
+        <a href="../index.html">
+            <img src="../assets/logo_himti.webp" alt="logo himti">
+        </a>
+        <span><a href="../index.html">HIMTI UNSIQ</a></span>
+    </header>
+    <div class="menus">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <aside>
+        <div class="materi">
+            <a href="../material/bahasa-program.html">Bahasa Pemrograman</a>
+            <a href="../material/cpp_intro.html">Pengenalan C++</a>
+            <a href="../material/cpp_syntax.html">Syntax C++</a>
+            <a href="../material/cpp_output.html">Output C++</a>
+            <a href="../material/cpp_data_types.html">Tipe Data</a>
+            <a href="../material/cpp_variabel.html">Variabel</a>
+            <a href="../material/cpp_input.html">Input Pengguna C++</a>
+            <a href="../material/cpp_operator.html" id="opr">Operator</a>
+            <a href="../material/cpp_condition.html">Kondisi</a>
+            <a href="../material/cpp_switch.html">Switch Case</a>
+            <a href="../material/cpp_loop_for.html">Perulangan : for</a>
+            <a href="../material/cpp_loop_while.html">Perulangan : While</a>
+            <a href="../material/cpp_loop_do_while.html">Perulangan : do..While</a>
+        </div>
+    </aside>
+    <article class="main-content">
+        <h1>Operator C++</h1>
+        Operator digunakan untuk melakukan operasi pada variabel. <br> dalam C++ ada 4 jeis operator, yaitu:<br>
+        <ol>
+            <li> <a href="#mtk">Operator Aritmatika</a></li>
+            <li><a href="#tugas">Operator Penugasan (Assignment)</a></li>
+            <li>Operator Perbandingan (Comparison)</li>
+            <li>Operator Logika</li>
+        </ol>
+
+        <!--operator aritmatika-->
+
+        <hr>
+        <div id="mtk">
+            <h1>Operator Aritmatika</h1>
+            Operator Aritmatika adalah opereator dasar dalam matematika yang terdiri dari <br>
+            <table>
+                <tr>
+                    <th>Simbol</th>
+                    <th>Nama</th>
+                    <th>Fungsi</th>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>Penambahan</td>
+                    <td>Menambahkan value atau variabel</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Pengurangan</td>
+                    <td>Mengurangkan value atau variabel</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Perkalian</td>
+                    <td>Mengalikan Value atau variabel(yang berisi angka)</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Pembagian</td>
+                    <td>Membagi nilai atau variabel(yang berisi angka)</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Modulus</td>
+                    <td>Menghitung sisa hasil bagi</td>
+                </tr>
+                <tr>
+                    <td>++</td>
+                    <td>Increment</td>
+                    <td>Kenaikan nilai variabel sebanyak 1 </td>
+                </tr>
+                <tr>
+                    <td>--</td>
+                    <td>Decrement</td>
+                    <td>Penurunan nilai variabel sebanyak 1</td>
+                </tr>
+            </table>
+            Contoh : <br>
+            <div class="code">
+                <code>
+                    <span class="tipe">int</span> a = 10%3;<br>
+                    <span class="cout">cout</span> <span class="operator">&#60;&#60;</span> a <span class="operator">&#60;&#60;</span> endl; <span class="comment">// 1</span>
+                </code>
+            </div>
+            Dari kode diatas menghasilkan nilai 1 karena 10 dibagi 3 = 3 sisa 1. Dan operator <kbd>%</kbd> mengitung sisa hasil bagi.
+        </div>
+
+        <!--operator perbandingan-->
+
+        <hr>
+        <div id="tugas">
+            <h1>Operator Penugasan</h1>
+            Operator Penugasan digunakan untuk menetapkan nilai ke variabel. Contoh: <br>
+            <div class="code">
+                <code>
+                <span class="tipe">int</span> a = 10; <br>
+                a += 10; <br> 
+                <span class="cout">cout</span> <span class="operator">&#60;&#60;</span> a <span class="operator">&#60;&#60;</span> endl; <span class="comment">//a = a+10 = 20</span>
+            </code>
+            </div><br>
+            <table id="tugas">
+                <tr>
+                    <th>Simbol</th>
+                    <th>Contoh</th>
+                    <th>Bentuk lain</th>
+                </tr>
+                <tr>
+                    <td>=</td>
+                    <td>x = 5</td>
+                    <td>x = 5</td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>a+=5</td>
+                    <td>a = a+5</td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>a -= 5</td>
+                    <td>a -= a%5</td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>a /= 5</td>
+                    <td> a = a/5</td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>a *= 5</td>
+                    <td>a = a*5</td>
+                </tr>
+                <tr>
+                    <td>%=</td>
+                    <td>a %= 5</td>
+                    <td>a = a%5 </td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <!-- Operator perbandingan-->
+        <div class="compare">
+            <h1>Operator Perbandingan</h1>
+            Operator Perbandingan digunakan untuk membandingkan 2 nilai. Contoh:<br>
+            <div class="code">
+                <code>
+                <span class="tipe">int</span> a , b; <br> a = 10;<br> b = 10; <br>
+                <span class="cout">cout</span> <span class="operator">&#60;&#60;</span> a == b <span class="operator">&#60;&#60;</span> endl; <span class="comment">//  1(true) karena nilai a bernilai sama dengan b</span>
+            </code>
+            </div>
+            <table id="compare">
+                <tr>
+                    <th>Simbol</th>
+                    <th>Nama</th>
+                    <th>Contoh</th>
+                </tr>
+                <tr>
+                    <td>==</td>
+                    <td>sama dengan</td>
+                    <td>x == 5</td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>Tidak sama dengan</td>
+                    <td>a != b</td>
+                </tr>
+                <tr>
+                    <td>&#60;</td>
+                    <td>Kurang dari</td>
+                    <td>a &#60; 5</td>
+                </tr>
+                <tr>
+                    <td> > </td>
+                    <td>Lebih dari</td>
+                    <td> a > 5</td>
+                </tr>
+                <tr>
+                    <td>&#60;=</td>
+                    <td>Kurang dari sama dengan</td>
+                    <td>a &#60;= 5</td>
+                </tr>
+                <tr>
+                    <td>>=</td>
+                    <td>Lebih dari sama dengan</td>
+                    <td>a >= 5 </td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+
+        <!--operator logika -->
+
+        <h1>Operator Logika</h1>
+        Operator Logika digunakan untuk melakukan perbandingan logika antara 2 variabel. Contoh:
+        <div class="code">
+            <code>
+                <span class="tipe">int</span> a, b; <br>
+                a = 10; <br>
+                b = 15 <br>
+                <span class="cout">cout</span> a > 5 && b < 20; <span class="comment">//menghasilkan true karena nilai a adalah 10 (lebih dari 5) dan nilai b adalah 15(kurang dari 20)</span>
+            </code>
+        </div>
+        <table class="logic">
+            <tr>
+                <th>Simbol</th>
+                <th>Nama</th>
+                <th>Penjelasan</th>
+            </tr>
+            <tr>
+                <td>&&</td>
+                <td>AND LOGIC</td>
+                <td>Menghasilkan nilai <b>true</b> jika kedua pernyataan bernilai benar</td>
+            </tr>
+            <tr>
+                <td>||</td>
+                <td>OR LOGIC</td>
+                <td>Menghasilkan nilai <b>true</b> jika salah satu pernyataan bernilai benar </td>
+            </tr>
+            <tr>
+                <td>!=</td>
+                <td>NOT LOGIC</td>
+                <td>Membalikkan hasil operasi logika, bernilai benar jika hasilnya salah dan sebaliknya</td>
+            </tr>
+        </table>
+    </article>
+    <div class="btn">
+        <div class="prev">
+            <a href="../material/cpp_input.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="next">
+            <a href="../material/cpp_condition.html">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="../script/script.js"></script>
+
+</html>

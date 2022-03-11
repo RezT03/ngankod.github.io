@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="in">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/aio_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
+    <link rel="icon" href="../assets/logo_himti.ico">
+    <title>C++ Syntax</title>
+</head>
+
+<body>
+    <header class="toHome" id="home-header">
+        <a href="../index.html">
+            <img src="../assets/logo_himti.webp" alt="logo himti">
+        </a>
+        <span><a href="../index.html">HIMTI UNSIQ</a></span>
+    </header>
+    <div class="menus">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <aside>
+        <div class="materi">
+            <a href="../material/bahasa-program.html">Bahasa Pemrograman</a>
+            <a href="../material/cpp_intro.html">Pengenalan C++</a>
+            <a href="../material/cpp_syntax.html" id="syntax">Syntax C++</a>
+            <a href="../material/cpp_output.html">Output C++</a>
+            <a href="../material/cpp_data_types.html">Tipe Data</a>
+            <a href="../material/cpp_variabel.html">Variabel</a>
+            <a href="../material/cpp_input.html">Input Pengguna C++</a>
+            <a href="../material/cpp_operator.html">Operator</a>
+            <a href="../material/cpp_condition.html">Kondisi</a>
+            <a href="../material/cpp_switch.html">Switch Case</a>
+            <a href="../material/cpp_loop_for.html">Perulangan : for</a>
+            <a href="../material/cpp_loop_while.html">Perulangan : While</a>
+            <a href="../material/cpp_loop_do_while.html">Perulangan : do..While</a>
+        </div>
+    </aside>
+    <article class="main-content">
+        <h1>C++ Syntax</h1>
+        Cara terbaik belajar pemrogrman adalah dengan memprektekkannya langsung. Jangan hanya sekedar menghafal syntax atau aturan penulisan, namun juga harus sering dipraktekkan karena beda bahasa pemrograman beda pula syntax-nya. <br>
+        <div class="code">
+            <code>
+        <span class="comment">//program pertamaku</span><br>
+        <span class="lib">#include &#60;iostream&#62;</span><br>
+        using namespace std;<br>
+        <span class="tipe">int</span> main(){<br>
+            &nbsp; <span class="cout">cout</span> <span class="operator">&#60;&#60;</span> “belajar bahasa c++”;<br>
+            &nbsp; return 0;<br>
+        }
+         </code>
+        </div>
+        Penjelasan <br> <b>Baris 1</b> terdapat tanda “//” adalah komentar, komentar tidak akan dibaca oleh komputer, komentar berfungsi untuk mempermudah programmer tentang fungsi kode yang dibuat. Komentar yang diawali dengan // hanya untuk 1 baris,
+        namun untuk lebih dari satu baris menggunakan tanda /*.... */ . Contoh : <br> /*blok<br> Komentar*/ <br><b>Baris 2</b> terdapat<b> #include &#60;iostream&#62;</b> adalah pustaka(library) file header yang memungkinkan kita bekerja dengan keyword
+        input dan output, seperti cout(pada baris 5). Masing-masing library memiliki fungsi yang berbeda.<br> <b>Baris 3</b> terdapat <b> using namespace std;</b> berarti kita dapat menggunakan nama untuk keyword dan variabel dari library standar. Untuk
+        header #include &#60;iostream&#62; dan using namespace std; selalu muncul hampir di semua program C++. <br> <b>Baris 4</b> <b>int main(){..}</b> adalah sebuah fungsi yang selalu muncul di C++. Semua yang ada didalam tanda kurung kurawal { } akan
+        dijalankan.
+        <br> <b>Baris 5</b> cout adalah perintah untuk menampilkan apa yang ada setelah tanda operator insertion ( &#60;&#60;).<br> <b>Baris 6</b> <b>return 0; </b> berfungsi untuk mengakhiri fungsi utama. Note : Perlu diingat, untuk setiap pernyataan
+        di C++ harus diakhiri dengan tanda titik-koma (semicolon) <b>;</b> .
+    </article>
+    <div class="btn">
+        <div class="prev">
+            <a href="../material/cpp_intro.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="next">
+            <a href="../material/cpp_output.html">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="../script/script.js"></script>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/aio_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
+    <link rel="icon" href="../assets/logo_himti.ico">
+    <title>C++ Switch Case</title>
+</head>
+
+<body>
+    <header class="toHome" id="home-header">
+        <a href="../index.html">
+            <img src="../assets/logo_himti.webp" alt="logo himti">
+        </a>
+        <span><a href="../index.html">HIMTI UNSIQ</a></span>
+    </header>
+    <div class="menus">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <aside>
+        <div class="materi">
+            <a href="../material/bahasa-program.html">Bahasa Pemrograman</a>
+            <a href="../material/cpp_intro.html">Pengenalan C++</a>
+            <a href="../material/cpp_syntax.html">Syntax C++</a>
+            <a href="../material/cpp_output.html">Output C++</a>
+            <a href="../material/cpp_data_types.html">Tipe Data</a>
+            <a href="../material/cpp_variabel.html">Variabel</a>
+            <a href="../material/cpp_input.html">Input Pengguna C++</a>
+            <a href="../material/cpp_operator.html">Operator</a>
+            <a href="../material/cpp_condition.html">Kondisi</a>
+            <a href="../material/cpp_switch.html" id="switch">Switch Case</a>
+            <a href="../material/cpp_loop_for.html">Perulangan : for</a>
+            <a href="../material/cpp_loop_while.html">Perulangan : While</a>
+            <a href="../material/cpp_loop_do_while.html">Perulangan : do..While</a>
+        </div>
+    </aside>
+    <article class="main-content">
+        <h1>Switch Case</h1>
+        Switch case memiliki fungsi yang sama dengan <b>if</b> namun memiliki syntax yang berbeda. <br>
+        <div class="code">
+            <code>
+                switch(kondisi){<br>
+                    &nbsp; case a: <br>
+                    <span class="comment">&nbsp;//blok kode</span><br>
+                    break; <br>
+                    &nbsp; case b: <br>
+                    <span class="comment">&nbsp;//blok kode</span>
+                <br>break; <br> 
+                default: <span class="comment">//dijalankan jika tidak ada opsi yang memenuhi</span><br>
+                }
+            </code>
+        </div>
+
+        Contoh:
+        <div class="code">
+            <code>
+                <span class="tipe">int</span> bulan = 2;<br>
+                switch (bulan) {<br>
+                &nbsp;case 1: <br>
+                &nbsp;<span class="cout">cout</span> <span class="operator">&#60;&#60;</span> "Januari"; <br>
+                &nbsp;break;<br>
+                &nbsp;case 2: <br>
+                &nbsp;<span class="cout">cout</span> <span class="operator">&#60;&#60;</span> "Februari"; <br>
+                &nbsp;break;<br>
+                &nbsp;case 3: <br>
+                &nbsp;<span class="cout">cout</span> <span class="operator">&#60;&#60;</span> "Maret"; <br>
+                &nbsp;break;<br>
+                &nbsp;case 4: <br>
+                &nbsp;<span class="cout">cout</span> <span class="operator">&#60;&#60;</span> "April"; <br>
+                &nbsp;break;<br>
+                &nbsp;case 5: <br>
+                &nbsp;<span class="cout">cout</span> <span class="operator">&#60;&#60;</span> "Mei"; <br>
+                &nbsp;break;<br>
+                &nbsp;default: <br> 
+                &nbsp;<span class="cout">cout</span> <span class="operator">&#60;&#60;</span> "tidak ditemukan"; <br>
+                }
+            </code>
+        </div>
+        Pada contoh kode diatas akan menghasilkan <b>Februari</b> karena opsi yang memenuhi adalah <b>case 2</b>.
+    </article>
+    <div class="btn">
+        <div class="prev">
+            <a href="../material/cpp_condition.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="next">
+            <a href="../material/cpp_syntax.html">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="../script/script.js"></script>
+
+</html>

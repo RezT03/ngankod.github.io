@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="in">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/aio_style.css">
+    <link rel="icon" href="../assets/logo_himti.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
+    <title>Bahasa Program</title>
+</head>
+
+<body>
+    <header class="toHome" id="home-header">
+        <a href="../index.html">
+            <img src="../assets/logo_himti.webp" alt="logo himti">
+        </a>
+        <span><a href="../index.html">HIMTI UNSIQ</a></span>
+    </header>
+    <div class="menus">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <aside>
+        <div class="materi">
+            <a href="#" id="bhs">Bahasa Pemrograman</a>
+            <a href="../material/cpp_intro.html">Pengenalan C++</a>
+            <a href="../material/cpp_syntax.html">Syntax C++</a>
+            <a href="../material/cpp_output.html">Output C++</a>
+            <a href="../material/cpp_data_types.html">Tipe Data</a>
+            <a href="../material/cpp_variabel.html">Variabel</a>
+            <a href="../material/cpp_input.html">Input Pengguna C++</a>
+            <a href="../material/cpp_operator.html">Operator</a>
+            <a href="../material/cpp_condition.html">Kondisi</a>
+            <a href="../material/cpp_switch.html">Switch Case</a>
+            <a href="../material/cpp_loop_for.html">Perulangan : for</a>
+            <a href="../material/cpp_loop_while.html">Perulangan : While</a>
+            <a href="../material/cpp_loop_do_while.html">Perulangan : do..While</a>
+        </div>
+    </aside>
+    <article class="main-content">
+        <h1>Bahasa Pemrograman</h1>
+        Bahasa pemrograman ini merupakan suatu himpunan dari aturan sintaks dan semantik yang dipakai untuk mendefinisikan program komputer. Bahasa ini memungkinkan seorang programmer dapat menentukan secara persis data mana yang akan diolah oleh komputer, bagaimana
+        data ini akan disimpan/diteruskan, dan jenis langkah apa secara persis yang akan diambil dalam berbagai situasi.<br>Berdasarkan tingkatannya bahasa pemrograman dibagi menjadi 3 level yaitu :
+        <ol class="lang-level">
+            <strong><li>Bahasa tingkat rendah (Low-Level Language)</li></strong> Bahasa program tingkat rendah berisi instruksi-instruksi yang ditujukan kepada komputer dengan menggunakan kode biner (binary). Kode-kode tersebut akan langsung diterjemahkan
+            oleh komputer tanpa harus melalui proses kompilasi. Contohnya adalah Assembly<br>
+            <strong><li>Bahasa Tingkat menengah (Mid-Level Language)</li></strong> Bahasa program tingkat menengah adalah instruksi yang berupa kode mnemonic seperti ADD, SUB, DIV, STOLOD, JMP dan lainnya. Namun, bahasa dalam tingkat menengah ini harus
+            diterjemahkan terlebih dahulu ke dalam bahasa mesin, karena komputer hanya mengerti penggunaan bahasa mesin. Contohnya adalah C <br>
+            <strong><li>Bahasa tingkat tinggi (High-Level Language)</li></strong> Bahasa program tingkat tinggi ini berisi instruksi-instruksi yang menggunakan bahasa alamiah yang dimengerti manusia, seperti bahasa Inggris atau matematika. Tingkatan ini
+            diciptakan untuk mengatasi kekurangan yang dimiliki tingkat menengah dan tingkat rendah. Contohnya adalah C++.
+        </ol>
+        Sedangkan Berdasarkan cara mengeksekusi kode program dibedakan menjadi 2, yaitu
+        <strong>Compiled</strong> dan <strong>Interpreted.</strong>
+        <hr>
+        <div class="run">
+            <h1>Perbedaan Compiled dan Interpreted Language</h1>
+            Untuk menjalankan kode yang sudah dibuat, komputer menggunakan 2 cara yaitu Compiled dan Interpreted. Nah apa sih perbedaan keduanya? <br>
+            <h4>Compiled Language</div> Compiled Language adalah bahasa program yang mana untuk menjalankannya diperlukan software bernama <em>Compiler</em>. Compiler adalah program untuk menerjemahkan source code ke dalam bahasa mesin. Apabila ada kesalahan
+        penulisan kode program maka compiler akan mengirimkan kode error ketika mencoba menjalankan kode program. Namun jika tidak ada kesalahan dalam kode program, compiler akan menghasilkan sebuah executable file, contohnya jika menjalankan kode program
+        C++ di Windows menghasilkan file <strong> .exe</strong>, dan jika dijalankan di MacOS akan menghasilkan file <strong> .o </strong><br> Contoh bahasa : C++, Java, C.
+        <h4>Interpreted Language</h4> Interpreted Language adalah bahasa pemrograman yang menjalankannya menggunakan Interpreter. Interpreter adalah program penerjemah source code secara langsung tanpa perlu menyusunnya menjadi executable file terlebih dahulu.
+        untuk menjalankan program perlu membuka <em>source code</em>. <br> Contoh bahasa : Python, Javascript, php
+        <br> Baik Compiled maupun Interpreted language, keduanya ditulis di sebuah <u>text editor/<em>code editor</em></u> yang biasanya terdapat di sebuah <u>IDE</u>.
+        <hr>
+        </div>
+        <div id="ide">
+            <h1>Apa itu IDE dan Text Editor?</h1>
+            IDE (Integrated Software Environtment) : software yang memiliki banyak fitur untuk membuat software. Didalam IDE terdapat Text editor, Syntax highlighting, Compiler, dan debugger. IDE biasanya digunakan untuk pemrograman yang bersifat Compiled bukan Interpreted.
+            Namun saat ini Text editor bisa bekerja seperti IDE dengan bantuan extension yang dikembangkan oleh developer text editor itu sendiri ataupun oleh pihak ketiga.<br> Text editor : software untuk menampilkan text murni tanpa adanya
+            formatiing apapun seperti bold,italic, dsb, serta digunakan untuk mengedit text tersebut.<br> Contoh IDE : Dev C++, NetBeans, CodeBlocks<br> Contoh Text editor : Notepad, Visual Studio Code, Sublime text
+        </div>
+    </article>
+    <div class="btn">
+        <div class="prev disabled">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="next">
+            <a href="../material/cpp_intro.html">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="../script/script.js"></script>
+
+</html>

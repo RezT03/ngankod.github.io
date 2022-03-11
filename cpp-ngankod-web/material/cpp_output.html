@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="in">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/aio_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
+    <link rel="icon" href="../assets/logo_himti.ico">
+    <title>C++ Output</title>
+</head>
+
+<body>
+    <header class="toHome" id="home-header">
+        <a href="../index.html">
+            <img src="../assets/logo_himti.webp" alt="logo himti">
+        </a>
+        <span><a href="../index.html">HIMTI UNSIQ</a></span>
+    </header>
+    <div class="menus">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <aside>
+        <div class="materi">
+            <a href="../material/bahasa-program.html">Bahasa Pemrograman</a>
+            <a href="../material/cpp_intro.html">Pengenalan C++</a>
+            <a href="../material/cpp_syntax.html" id="">Syntax C++</a>
+            <a href="../material/cpp_output.html" id="out">Output C++</a>
+            <a href="../material/cpp_data_types.html">Tipe Data</a>
+            <a href="../material/cpp_variabel.html">Variabel</a>
+            <a href="../material/cpp_input.html">Input Pengguna C++</a>
+            <a href="../material/cpp_operator.html">Operator</a>
+            <a href="../material/cpp_condition.html">Kondisi</a>
+            <a href="../material/cpp_switch.html">Switch Case</a>
+            <a href="../material/cpp_loop_for.html">Perulangan : for</a>
+            <a href="../material/cpp_loop_while.html">Perulangan : While</a>
+            <a href="../material/cpp_loop_do_while.html">Perulangan : do..While</a>
+        </div>
+    </aside>
+    <article class="main-content">
+        <h1>Output (menampilkan text)</h1>
+        Untuk menampilkan text pada C++ kita gunakan cout yang dibarengi dengan operator "&#60;&#60;"
+        <div class="code">
+            <code>
+        <span class="comment">//program pertamaku</span><br>
+        <span class="lib">#include &#60;iostream&#62;</span><br>
+        using namespace std;<br>
+        <span class="tipe">int</span> main(){<br>
+            &nbsp; <span class="cout">cout</span> <span class="operator">&#60;&#60;</span> “belajar bahasa c++”;<br>
+            &nbsp; return 0;<br>
+        }
+    </code><br>
+        </div><br> keyword <b>cout</b> bisa ditulis secara berulang. contoh: <br>
+        <div class="code">
+            <code>
+        <span class="cout">cout</span> <span class="operator">&#60;&#60;</span> "belajar c++";<br>
+        <span class="cout">cout</span> <span class="operator">&#60;&#60;</span> "NganKod HIMTI";
+    </code>
+        </div>
+        Namun, jika penulisannya seperti contoh diatas akan menghasilkan output <b>belajar c++Ngankod HIMTI</b>.<br> Nah ada 2 cara membuat baris baru di C++.<br> 1. Menggunakan <b>endl;</b>. Contoh:<br>
+        <div class="code">
+            <code>
+                <span class="cout">cout</span> <span class="operator">&#60;&#60;</span> "belajar c++" <span class="operator">&#60;&#60;</span> endl;<br>
+        <span class="cout">cout</span> <span class="operator">&#60;&#60;</span> "NganKod HIMTI" <span class="operator">&#60;&#60;</span> endl;
+            </code>
+        </div><br> 2. Menggunakan "\n"; . Contoh:
+        <div class="code">
+            <code>
+        <span class="cout">cout</span> <span class="operator">&#60;&#60;</span> "belajar c++\n";<br>
+        <span class="cout">cout</span> <span class="operator">&#60;&#60;</span> "NganKod HIMTI\n";
+    </code>
+        </div>
+    </article>
+    <div class="btn">
+        <div class="prev">
+            <a href="../material/cpp_syntax.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="next">
+            <a href="../material/cpp_data_types.html">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="../script/script.js"></script>
+
+</html>

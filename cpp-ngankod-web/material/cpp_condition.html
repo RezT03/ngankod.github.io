@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="in">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/aio_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
+    <link rel="icon" href="../assets/logo_himti.ico">
+    <title>C++ Condition</title>
+</head>
+
+<body>
+    <header class="toHome" id="home-header">
+        <a href="../index.html">
+            <img src="../assets/logo_himti.webp" alt="logo himti">
+        </a>
+        <span><a href="../index.html">HIMTI UNSIQ</a></span>
+    </header>
+    <div class="menus">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <aside>
+        <div class="materi">
+            <a href="../material/bahasa-program.html">Bahasa Pemrograman</a>
+            <a href="../material/cpp_intro.html">Pengenalan C++</a>
+            <a href="../material/cpp_syntax.html">Syntax C++</a>
+            <a href="../material/cpp_output.html">Output C++</a>
+            <a href="../material/cpp_data_types.html">Tipe Data</a>
+            <a href="../material/cpp_variabel.html">Variabel</a>
+            <a href="../material/cpp_input.html">Input Pengguna C++</a>
+            <a href="../material/cpp_operator.html">Operator</a>
+            <a href="../material/cpp_condition.html" id="if">Kondisi</a>
+            <a href="../material/cpp_switch.html">Switch Case</a>
+            <a href="../material/cpp_loop_for.html">Perulangan : for</a>
+            <a href="../material/cpp_loop_while.html">Perulangan : While</a>
+            <a href="../material/cpp_loop_do_while.html">Perulangan : do..While</a>
+        </div>
+    </aside>
+    <article class="main-content">
+        <h1>Pengkondisian</h1>
+        Dalam sebuah proses program, biasanya terdapat kode penyeleksian kondisi, kode pengulangan program, atau kode untuk pengambilan keputusan. Hal ini pernah kalian pelajari pada mata kuliah Computational Thinking materi <b>flowchart</b>
+        <div class="flowchart">
+            <img src="../assets/Drawing1.png">
+        </div>
+        <br> Untuk menjalankan perintah tersebut, ada beberapa keyword yang bisa digunakan : <br>
+        <ol>
+            <!-- if-else switch-->
+            <li><kbd>if</kbd> - Menjalankan blok kode jika kondisi benar</li>
+            <li><kbd>else</kbd> - Menjalankan blok kode jika kondisi salah</li>
+            <li><kbd>else if</kbd> - Menentukan kondisi baru jika kondisi pertama salah</li>
+            <li><kbd>switch</kbd> - Memiliki lebih banyak opsi yang bisa dijalankan, namun hanya menjalankan yang benar</li>
+        </ol>
+        <hr>
+        <!-- if -->
+        <h1>if</h1>
+        <div class="code">
+            <code>
+                    if (conditions){ <br>
+                        <span class="comment">//blok program yang akan dijalankan</span>
+                   <br> }
+                </code>
+        </div>
+        misal disini kita akan menentukan apakah 10 lebih kecil dari 20.
+        <div class="code">
+            <code>
+                if (10 &#60; 20){ <br>
+                    <span class="cout"> cout</span> <span class="operator">&#60;&#60;</span> "10 lebih kecil dari 20";
+              <br>  }
+            </code>
+        </div>
+        Kode diatas akan menjalankan blok kode dibawah if karena kondisinya terepenuhi
+        <hr>
+
+        <!-- else-->
+        <h1>else</h1>
+        <div class="code">
+            <code>
+                    if (conditions){ <br>
+                        <span class="comment">//blok program yang akan dijalankan</span>
+                   <br> } else { <span class="comment">//akan dijalankan ketika tidak terpenuhi</span> }
+                </code>
+        </div>
+        misal disini kita akan menentukan apakah 10 lebih kecil dari 20 namun menggunakan operator yang salah.
+        <div class="code">
+            <code>
+                if (10 > 20){ <br>
+                    <span class="cout"> cout</span> <span class="operator">&#60;&#60;</span> "10 lebih kecil dari 20";
+              <br>  } else{ <br>
+                    <span class="cout">cout</span> <span class="operator">&#60;&#60;</span> "20 lebih besar dari 10";
+            <br> }
+            </code>
+        </div>
+        <hr>
+        <h1>else if</h1>
+        <div class="code">
+            <code>
+                if (conditions){ <br>
+                <span class="comment">//blok program yang akan dijalankan</span>
+                <br> } else if(kondisi_baru){ <br><span class="comment">//akan dijalankan ketika kondisi baru terpenuhi</span><br>
+                 } else { }
+                </code>
+        </div>
+        <hr>
+        <h1>Nested if</h1>
+        Kalian bisa menuliskan <b>if</b> didalam <b>if</b>
+        <div class="code">
+            <code>
+                if(kondisi 1){<br>
+                &nbsp;if(kondisi 1_a){<br>
+                    &nbsp;}
+                <br>}
+            </code>
+        </div>
+    </article>
+    <div class="btn">
+        <div class="prev">
+            <a href="../material/cpp_operator.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="next">
+            <a href="../material/cpp_switch.html">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="../script/script.js"></script>
+
+</html>
